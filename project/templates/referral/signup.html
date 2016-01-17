@@ -3,16 +3,23 @@ i<!DOCTYPE html>
     {% include 'base/base.html' %}
     <body>
       <div class="container">
-
         <form>
             <h3>Sign up</h3>
-            <div class="row twelve columns">
+            <div class="row">
+                <div class="six columns">
+                  <input class="u-full-width" type="text" placeholder="First Name" >
+                </div>
+                <div class="six columns">
+                  <input class="u-full-width" type="text" placeholder="Last Name">
+                </div>
+            </div>
+            <div class="twelve columns">
               <input class="u-full-width" type="text" placeholder="Username, e.g: deepankar" id="uName">
             </div>
-            <div class="row twelve columns">
+            <div class="twelve columns">
               <input class="u-full-width" type="email" placeholder="Email..eg: xyz@gmail.com" id="passwd">
             </div>
-            <div class="row twelve columns">
+            <div class="twelve columns">
               <input class="u-full-width" type="password" placeholder="Password.." id="passwd">
             </div>
           <input class="button-primary" type="submit" value="Submit">
@@ -21,6 +28,5 @@ i<!DOCTYPE html>
           </div>
         </form>
       </div>
-
     </body>
 </html>

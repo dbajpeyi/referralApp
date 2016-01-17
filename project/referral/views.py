@@ -23,6 +23,16 @@ class HomeView(View):
     def get(self, request):
         return HttpResponse("Hello")
 
+class SignupView(View):
+    def get(self, request):
+        return render(request, 'referral/signup.html', {})
+
+
+    #TODO:POST
+
+
+
+
 class LoginView(View):
     def get(self, request):
         return render(request, 'referral/login.html', {})

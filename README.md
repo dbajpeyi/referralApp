@@ -1,1 +1,1 @@
-#A simple referral app
+#A simple referral/coupon generation system example

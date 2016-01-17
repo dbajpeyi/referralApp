@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.views.generic import View
-from django.http import JsonResponse
+from django.http import JsonResponse, HttpResponse
 
 # Create your views here.
 
@@ -18,9 +18,14 @@ class JsonBaseView():
             'status' : 'ok'
         })
 
+
+class HomeView(View):
+    def get(self, request):
+        return HttpResponse("Hello")
+
 class LoginView(View):
     def get(self, request):
-        return render(request, '/login.html', {})
+        return render(request, 'referral/login.html', {})
 
 
     def post(self, request):
